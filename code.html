@@ -1,0 +1,33 @@
+
+<script src="http://code.jquery.com/jquery-latest.js"></script><script language="javascript">'use strict';$(function() {var width = 940; var animationSpeed = 1250; var pause = 3500; var currentSlide = 1;var $slider = $('#slider'); var $slideContainer = $('.slides', $slider); var $slides = $('.slide', $slider); var interval; function startSlider() { interval = setInterval(function() { $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {if (++currentSlide === $slides.length) {currentSlide = 1; $slideContainer.css('margin-left', 0); }});}, pause);} function pauseSlider() {clearInterval(interval);}$slideContainer.on('mouseenter', pauseSlider).on('mouseleave', startSlider);startSlider();});</script><div style="width: 940px; margin: 0 auto;"><div style="position: relative; width: 940px; ">
+<style type="text/css">#gpoy {position: absolute; right:-150px; top:3px; padding: 3px 7px 3px; z-index:99; opacity: 0.6; transition: 1s; }.repper {width: 946px; margin: 0 auto; position: relative; overflow: hidden; border-radius: 0px; }.repper:hover #gpoy {transition: 2s; right:3px; }</style><div class="repper"><div id="gpoy"><A style="font-weight: normal; color: #FFFFFF; text-decoration:none; font-size:7pt; line-height:10px; font-family: arial;" HREF="http://www.123-slideshow.com" TARGET="_blank">Free slideshow maker</A></div><style type="text/css">#slider {width: 940px; height: 385px; border: 3px solid #FFFFFF; border-radius: 0px; overflow: hidden; position: relative;  cursor: hand; cursor: pointer}#slider .slides {width: 3760px; height: 385px;  display: block; margin: 0; padding: 0;}#slider .slide {width: 940px; height: 385px; float: left; list-style-type: none;}.DOT170126 {position: absolute; max-width: 940px; margin: 0px;}.c50046  {position: absolute; bottom: 0px; width:100%;  padding: 12px; background-color: rgba(0, 0, 0, 0.7); color: #FFFFF; font-size:24pt; font-family:Tahoma; text-align:center; line-height:48px; z-index:33; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}</style>
+
+<div id="slider">
+<ul class="slides">
+
+<li class="slide slide1">
+ <figure class="DOT170126">
+  <IMG SRC="123-slideshow/50046-1.jpg"> 
+ </figure>
+ </li>
+
+<li class="slide slide2">
+ <figure class="DOT170126">
+  <IMG SRC="123-slideshow/50046-2.jpg"> 
+ </figure>
+ </li>
+
+<li class="slide slide3">
+ <figure class="DOT170126">
+  <IMG SRC="123-slideshow/50046-3.png"> 
+ </figure>
+ </li>
+
+<li class="slide slide1">
+ <figure class="DOT170126">
+  <IMG SRC="123-slideshow/50046-1.jpg"> 
+ </figure>
+ </li>
+
+</ul></div></div></div>
+</div></div>
